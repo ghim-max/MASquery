@@ -156,7 +156,7 @@ if st.button("Ask", type="primary"):
             st.caption(f"Sources consulted: {', '.join(source_names)}")
 
             # ── Step 4: ask Claude and display the answer ──────────────────
-            with st.spinner("Asking Claude…"):
+            with st.spinner("Looking through regulation…"):
                 answer = ask_claude(question, relevant_docs)
 
             st.subheader("Answer")
